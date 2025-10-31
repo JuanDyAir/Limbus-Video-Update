@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbus Company Updates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560 0%, #d63031 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #a8a8a8;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 18px 30px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-btn.featured {
+            background: linear-gradient(135deg, #e94560 0%, #d63031 100%);
+            border-color: transparent;
+            font-size: 18px;
+            animation: pulse 2s infinite;
+        }
+
+        .link-btn.featured:hover {
+            background: linear-gradient(135deg, #ff4d6d 0%, #e94560 100%);
+            transform: translateY(-3px);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+            }
+            50% {
+                box-shadow: 0 5px 30px rgba(233, 69, 96, 0.6);
+            }
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-img">LC</div>
+            <h1>Limbus Company</h1>
+            <p class="subtitle">Update Terkini & Konten Promosi</p>
+        </div>
+
+        <div class="links">
+            <a href="https://youtu.be/X4FPQWC-rUs?si=aorDuNuOGeVdua1q" class="link-btn featured" target="_blank">
+                <span class="icon">▶️</span>Watch Advert
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="icon">📰</span>Artikel Update Terbaru
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="icon">🎮</span>Download Game
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="icon">💬</span>Join Community
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="icon">📱</span>Media Sosial Resmi
+            </a>
+
+            <a href="#" class="link-btn">
+                <span class="icon">ℹ️</span>Tentang Limbus Company
+            </a>
+        </div>
+
+        <footer>
+            © 2025 Limbus Company Promo
+        </footer>
+    </div>
+</body>
+</html>
